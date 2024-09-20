@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div class="counter">
+      <div class="screen" id="display1">0</div>
+      <button onclick="counter1.increment()">increment</button>
+      <button onclick="counter1.decrement()">decrement</button> 
+      <div class="btn-select" id="btn-select">
+        <input onchange="counter1.newNumber(this)" id="number-select1" type="text" placeholder="Select a new number"/>
+      </div>
+      <div class="btn-remove" id="btn-reset"></div>
+        <button onclick="counter1.reset()" class="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="counter">
+      <div class="screen" id="display2">0</div>
+      <button onclick="counter2.increment()">increment</button>
+      <button onclick="counter2.decrement()">decrement</button> 
+      <div class="btn-select" id="btn-select">
+        <input onchange="counter2.newNumber(this)" id="number-select2" type="text" placeholder="Select a new number"/>
+      </div>
+      <div class="btn-remove" id="btn-reset"></div>
+        <button onclick="counter2.reset()" id="reset2">Reset</button>
+      </div>
+
+    <div class="counter">
+      <div class="screen" id="display3">0</div>
+      <button onclick="counter3.increment()">increment</button>
+      <button onclick="counter3.decrement()">decrement</button> 
+     <div class="btn-select" id="btn-select">
+        <input onchange="counter3.newNumber(this)" id="number-select3" type="text" placeholder="Select a new number"/>
+      </div>
+      <div class="btn-remove" id="btn-reset"></div>
+        <button onclick="counter3.reset()" id="reset3">Reset</button>
+      </div>
+
+    <script src="script.js"></script>
+    <script>
+      const counter1 = counter('display1');
+      const counter2 = counter('display2');
+      const counter3 = counter('display3');
+
+
+    </script>
+  </body>
+</html>
